@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM MANIPULATION FORM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    
+    
+</head>
+<body>
+       
+    
+    <div  class="txtoff" id="thanks">&nbsp&#10004 Thank you for contacting us,&nbsp<span id="firstname"></span><input type="button" id="x" value="&#10006" onclick=""> </input></div>
+  
+    <form id="formular">
+        <img id="poza" src="https://image.freepik.com/free-vector/sunrise-landscape-forest_23-2147512072.jpg" alt="mountains">  
+        <input class="txtbx" type="text" id="fn" value="First Name" onclick="this.select();"><br>
+        <input class="txtbx" type="text" id="ln" value="Last Name" onclick="this.select();">
+        <!-- onclick="this.select();  pentru a selecta cand dam click tot textul din campul respectiv-->    
+ 
+        <p> Gender</p>
+            <div id="sex">
+                    <input type="radio" id="male" name="sex" value ="Male"  checked="checked"> <!-- daca nu este preselectata valoare, apare eroare din cauza lui querySelector -->
+                    <label for="male">M</label><br>
+                    <input type="radio" id="female" name="sex" value="Female">
+                    <label for="female">F</label><br>
+            </div>
+        <textarea id="mesaj"  onclick="this.select();">Your message here...</textarea><br>    
+        <button type="button" id="submit">Submit</button>
+    
+  </form> 
+
+ 
+    
+</body>
+<script
+    src="http://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="mainjQ.js"></script>
+</html>
